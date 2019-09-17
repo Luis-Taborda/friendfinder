@@ -190,8 +190,9 @@
 	var imageNoTags = ($("#linkToImage").val().trim());
 	// var imageWithTags = "<img src='"+ imageNoTags + "'>"
 	//_____I used this part below not that commented out above__________________
-	// $("#modalbodyy").append('<img src="' + imageNoTags +'"height="300" width ="300">' );
-	 $("#modalbodyy").append("Hello " + user+ "You've been matched with" + "newBFF");
+	$("#modalbodyy").append('<img src="' + imageNoTags +'"height="300" width ="300">' );
+	var user = ($("#userName").val().trim());
+	$("#modalbodyy").html("Hello " + user+ "You've been matched with" + newBFF);
 //_________________________________________for user picture in modal_____________________________
 //________________________for user responses_____________________________________________
 var userResponse1 = $("#select1 option:selected").text();
@@ -225,11 +226,11 @@ console.log(person1)
 //_______________________________________________________________________________________________
  $.post("/friends", person1);
 //_________________________________________for user picture in modal____________________________
-	var user = ($("#userName").val().trim());
+	
 var person = {
 	name: "test"
 }
-// $.get("/api/friendcheck", person);
+$.get("/api/friendcheck", person);
 });
 </script>
 </body>
