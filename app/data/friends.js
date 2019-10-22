@@ -1,4 +1,4 @@
-var friends = [
+var friendsArray = [
     {
         "name":"Marcy",
         "photo": "https://st3.depositphotos.com/4421371/15483/i/1600/depositphotos_154837522-stock-photo-teenage-girl-with-bob-haircut.jpg",
@@ -80,3 +80,5 @@ var friends = [
         ]
     }
 ]
+
+module.exports = friendsArray
